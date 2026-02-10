@@ -2,33 +2,32 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Software Engineer · Data Infrastructure & Real-Time Analytics · <a href="https://www.uber.com" target="_blank">Uber</a>
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Sunnyvale, CA</p>
+    <p><a href="mailto:mullerlzr@gmail.com">mullerlzr@gmail.com</a></p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: false
 
 latest_posts:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  scrollable: true
+  limit: 3
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm a Software Engineer on the Data Infrastructure & Platform team at Uber, where I work on two core pillars: real-time analytics over [Apache Pinot](https://pinot.apache.org/) and streaming infrastructure over [Apache Kafka](https://kafka.apache.org/). My work sits at the intersection of large-scale distributed systems, operational efficiency, and developer experience.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+On the analytics side, I've been building tooling to make Pinot more accessible — including an MCP Server and a multi-agent system that lets users onboard tables and troubleshoot queries through Slack, our internal chatbot, and Claude Code. I also re-architected the Fulfillment team's dedicated Pinot clusters using Upsert features, cutting costs by 50% and reducing query latency from 10s to 1.5s. More recently, I tackled NUMA-aware node sizing for our Logging clusters — which account for over 50% of Uber's total Pinot deployment — saving 200TB of memory and $3.3M annually.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Before Uber, I spent nearly two years at Confluent on the Cloud Infrastructure team. I built a resource pooling service in Spring Boot to orchestrate Confluent Cloud resources (Kafka, Flink, Kubernetes, networking) for internal e2e test environments, and implemented a Go-based microservice runtime with service mesh support using Istio and Gloo Mesh. I also drove a testing strategy overhaul — introducing component tests and contract tests (via Pact) across 200+ cloud microservices.
+
+I hold an M.S. in Information Networking from Carnegie Mellon University and a B.E. in Computer Software Engineering from the University of Electronic Science and Technology of China. I've also interned at Snowflake (task scheduling infrastructure) and StubHub (payments platform). Outside of work, I'm interested in AI agents, LLM tooling, and the evolving landscape of agentic systems built on top of data infrastructure.
