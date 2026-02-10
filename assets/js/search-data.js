@@ -35,6 +35,41 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
+            },},{id: "projects-cs336-language-modeling-from-scratch",
+          title: 'CS336 — Language Modeling from Scratch',
+          description: "Working through Stanford CS336 assignments — building a BPE tokenizer, Transformer, and AdamW optimizer from scratch in PyTorch.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/cs336/index/";
+            },},{id: "projects-cs336-notes",
+          title: 'CS336 — Notes',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/cs336/notes/";
+            },},{id: "projects-cs336-resources",
+          title: 'CS336 — Resources',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/cs336/resources/";
+            },},{id: "projects-nano-vllm",
+          title: 'nano-vllm',
+          description: "A minimal, from-scratch reimplementation of vLLM in ~1200 lines of Python — studying efficient LLM inference and PagedAttention.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/nano-vllm/index/";
+            },},{id: "projects-nano-vllm-reading-notes",
+          title: 'nano-vllm — Reading Notes',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/nano-vllm/notes/";
+            },},{id: "projects-picotron",
+          title: 'picotron',
+          description: "Exploring Hugging Face&#39;s minimalist 4D distributed training framework — data, tensor, and pipeline parallelism in a few hundred lines.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/picotron/index/";
+            },},{id: "projects-picotron-reading-notes",
+          title: 'picotron — Reading Notes',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/picotron/notes/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
